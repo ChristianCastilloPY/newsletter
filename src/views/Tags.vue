@@ -163,25 +163,20 @@ export default {
   data() {
     return {
       cardstag: [],
-    };
-   return{ 
       contador:[0,2,4],
-      contador1:1,
-     incrementar(index) {
-          this.contador1=this.contador1 + 1 ,
-          this.contador[index]= this.contador[index] + 1
-        },
-   }
+      contador1:1
+    };
+
   },
   mounted() {
     this.getCards();
   },
   methods: {
 
-    // incrementar: function(index) {
-    //      this.contador1=this.contador1 + 1
-    //   this.contador[index]= this.contador[index] + 1
-    //     },
+    incrementar: function(index) {
+         this.contador1=this.contador1 + 1
+      this.contador[index]= this.contador[index] + 1
+        },
 
     alertDisplay(index) {
       // $swal function calls SweetAlert into the application with the specified configuration.
